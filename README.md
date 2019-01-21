@@ -40,7 +40,8 @@ Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('
 ibmcloud login 
 ```
 
-If you have a federated ID, use ibmcloud login --sso to log in to the IBM Cloud CLI.
+Select eu-gb for UK region or to know your region click [here](https://console.bluemix.net/iam/#/users/) 
+then click your account name then click Cloud Foundry access then you will see organization name and your regions.
 
 4. Install the Container Registry plug-in.
 ```
