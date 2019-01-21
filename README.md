@@ -43,19 +43,14 @@ ibmcloud login
 Select eu-gb for UK region or to know your region click [here](https://console.bluemix.net/iam/#/users/) 
 then click your account name then click Cloud Foundry access then you will see organization name and your regions.
 
-4. Install the Container Registry plug-in.
-```
-ibmcloud plugin install container-registry -r Bluemix
-```
-
-5. Install the Container Service plug-in.
+4. Install the Container Service plug-in.
 ```
 ibmcloud plugin install IBM-Containers -r Bluemix
 ```
 
-6. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)
+5. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)
 
-7. Create cluster
+6. Create cluster
 ```
 ibmcloud ks cluster-create --name YOUR_CLUSTER_NAME
 ```
