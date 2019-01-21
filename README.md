@@ -57,19 +57,19 @@ ibmcloud plugin install IBM-Containers -r Bluemix
 
 7. Create cluster
 ```
-ibmcloud cs cluster-create --name YOUR_CLUSTER_NAME
+ibmcloud ks cluster-create --name YOUR_CLUSTER_NAME
 ```
 
 8. Configure Kubernetes cluster
 ```
-$ ibmcloud cs cluster-config YOUR_CLUSTER_NAME
+$ ibmcloud ks cluster-config YOUR_CLUSTER_NAME
 ```
 
 Copy and paste response in CLI
 
 9. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
 ```
-$ ibmcloud cr namespace-add YOUR_NAMESPACE
+$ ibmcloud ks namespace-add YOUR_NAMESPACE
 ```
 
 The [deploy folder](./deploy/) contains scripts and instructions to provision the application onto your favourite platform. 
@@ -83,12 +83,20 @@ $ cd deploy/kubernetes
 kubectl create namespace sock-shop
 
 ```
-12. Deploy to Kuberntes Cluster
+12. Deploy to Kubernetes Cluster
 ```
 kubectl apply -f complete-demo.yaml
 ```
 Note: the "complete-demo.yaml" contain all microservices deployment, you can individually deploy each microservice by using /kubernetes/manifests or for autoscaling use /kubernetes/autoscaling 
 
+13 Get the public IP address for a worker node in the cluster
+```
+ibmcloud ks workers <cluster_name>
+```
+14 Access the microservices application
+```
+http://<Public IP>:30001/
+```
 Please let us know if there is a platform that you would like to see supported.
 
 ## Bugs, Feature Requests and Contributing
