@@ -9,7 +9,15 @@ It is built using [Spring Boot](http://projects.spring.io/spring-boot/), [Go kit
 You can read more about the [application design](./internal-docs/design.md).
 
 ## Deployment Steps
-### clone the repo
+
+### 1. Clone the repo
+
+Clone the repo locally. In a terminal, run:
+
+```
+$ git clone https://github.com/omarfoz/microservices-demo
+```
+
 ### Run the application on Kubernetes
 
 
@@ -54,10 +62,22 @@ Copy and paste response in CLI
 $ ibmcloud cr namespace-add YOUR_NAMESPACE
 ```
 
-
-
-
 The [deploy folder](./deploy/) contains scripts and instructions to provision the application onto your favourite platform. 
+
+10. Go to the deploy/kubernetes folder
+```
+$ cd deploy/kubernetes
+```
+11. Create namespace sock-shop
+```
+kubectl create namespace sock-shop
+
+```
+12. Deploy to Kuberntes Cluster
+```
+kubectl apply -f complete-demo.yaml
+```
+Note: the "complete-demo.yaml" contain all microservices deployment, you can individually deploy each microservice by using /kubernetes/manifests or /kubernetes/autoscaling 
 
 Please let us know if there is a platform that you would like to see supported.
 
