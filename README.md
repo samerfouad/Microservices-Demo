@@ -81,7 +81,6 @@ kubectl create namespace sock-shop
 ```
 kubectl apply -f complete-demo.yaml
 ```
-Note: the "complete-demo.yaml" contain all microservices deployment, you can individually deploy each microservice by using /kubernetes/manifests or for autoscaling use /kubernetes/autoscaling 
 
 13 Get the public IP address for a worker node in the cluster
 ```
