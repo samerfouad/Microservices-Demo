@@ -77,7 +77,7 @@ kubectl create namespace sock-shop
 ```
 kubectl apply -f complete-demo.yaml
 ```
-Note: the "complete-demo.yaml" contain all microservices deployment, you can individually deploy each microservice by using /kubernetes/manifests or /kubernetes/autoscaling 
+Note: the "complete-demo.yaml" contain all microservices deployment, you can individually deploy each microservice by using /kubernetes/manifests or for autoscaling use /kubernetes/autoscaling 
 
 Please let us know if there is a platform that you would like to see supported.
 
