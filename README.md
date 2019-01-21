@@ -50,6 +50,7 @@ ibmcloud plugin install IBM-Containers -r Bluemix
 ```
 ibmcloud ks cluster-create --name YOUR_CLUSTER_NAME
 ```
+NOTE: It can take a few minutes for your cluster to be ready
 
 8. Configure Kubernetes cluster
 ```
