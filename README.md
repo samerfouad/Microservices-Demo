@@ -26,11 +26,7 @@ $ git clone https://github.com/omarfoz/microservices-demo
 
 
 ## Prerequisites
-if your'e using Windows OS Run this command with your PowerShell to download and install a few CLI tools and plugins.
 
-```
-Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')
-```
 1. [Create an account with IBM Cloud](http://ibm.biz/micro-reg)
 
 2. [Install IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started)
@@ -60,7 +56,9 @@ ibmcloud ks cluster-create --name YOUR_CLUSTER_NAME
 $ ibmcloud ks cluster-config YOUR_CLUSTER_NAME
 ```
 
-Copy and paste response in CLI
+Copy and paste response in CLI.
+NOTE: in Windows OS the response start with "SET" 
+
 
 9. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
 ```
