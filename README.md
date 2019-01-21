@@ -26,6 +26,11 @@ $ git clone https://github.com/omarfoz/microservices-demo
 
 
 ## Prerequisites
+if your'e using Windows OS Run this command with your PowerShell to download and install a few CLI tools and plugins.
+
+```
+Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')
+```
 1. [Create an account with IBM Cloud](http://ibm.biz/micro-reg)
 
 2. [Install IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started)
