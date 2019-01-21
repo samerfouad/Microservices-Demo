@@ -6,6 +6,10 @@ The application is the user-facing part of an online shop that sells socks. It i
 
 It is built using [Spring Boot](http://projects.spring.io/spring-boot/), [Go kit](http://gokit.io) and [Node.js](https://nodejs.org/) and is packaged in Docker containers.
 
+### Architecture
+
+![Architecture diagram](https://github.com/microservices-demo/microservices-demo.github.io/blob/HEAD/assets/Architecture.png "Architecture")
+
 You can read more about the [application design](./internal-docs/design.md).
 
 ## Deployment Steps
