@@ -52,7 +52,7 @@ ibmcloud ks cluster-create --name YOUR_CLUSTER_NAME
 ```
 NOTE: It can take a few minutes for your cluster to be ready
 
-8. Configure Kubernetes cluster
+7. Configure Kubernetes cluster
 ```
 $ ibmcloud ks cluster-config YOUR_CLUSTER_NAME
 ```
@@ -61,32 +61,32 @@ Copy and paste response in CLI.
 NOTE: in Windows OS the response start with "SET" 
 
 
-9. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
+8. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
 ```
 $ ibmcloud ks namespace-add YOUR_NAMESPACE
 ```
 
 The [deploy folder](./deploy/) contains scripts and instructions to provision the application onto your favourite platform. 
 
-10. Go to the deploy/kubernetes folder
+9. Go to the deploy/kubernetes folder
 ```
 $ cd deploy/kubernetes
 ```
-11. Create namespace sock-shop
+10. Create namespace sock-shop
 ```
 kubectl create namespace sock-shop
 
 ```
-12. Deploy to Kubernetes Cluster
+11. Deploy to Kubernetes Cluster
 ```
 kubectl apply -f complete-demo.yaml
 ```
 
-13 Get the public IP address for a worker node in the cluster
+12 Get the public IP address for a worker node in the cluster
 ```
 ibmcloud ks workers <cluster_name>
 ```
-14 Access the microservices application
+13 Access the microservices application
 ```
 http://<Public IP>:30001/
 ```
