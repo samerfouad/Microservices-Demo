@@ -33,7 +33,7 @@ $ git clone https://github.com/omarfoz/microservices-demo
 
 3. Log into your IBM Cloud account 
 ```
-ibmcloud login 
+$ ibmcloud login 
 ```
 
 Select eu-gb for UK region or to know your region click [here](https://console.bluemix.net/iam/#/users/) 
@@ -41,7 +41,7 @@ then click your account name then click Cloud Foundry access then you will see o
 
 4. Install the Container Service plug-in.
 ```
-ibmcloud plugin install IBM-Containers -r Bluemix
+$ ibmcloud plugin install IBM-Containers -r Bluemix
 ```
 
 5. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)
@@ -74,17 +74,17 @@ $ cd deploy/kubernetes
 ```
 10. Create namespace sock-shop
 ```
-kubectl create namespace sock-shop
+$ kubectl create namespace sock-shop
 
 ```
 11. Deploy to Kubernetes Cluster
 ```
-kubectl apply -f complete-demo.yaml
+$ kubectl apply -f complete-demo.yaml
 ```
 
 12 Get the public IP address for a worker node in the cluster
 ```
-ibmcloud ks workers <cluster_name>
+$ ibmcloud ks workers <cluster_name>
 ```
 13 Access the microservices application
 ```
