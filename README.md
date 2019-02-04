@@ -61,32 +61,27 @@ Copy and paste response in CLI.
 NOTE: in Windows OS the response start with "SET" 
 
 
-8. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
-```
-$ ibmcloud ks namespace-add YOUR_NAMESPACE
-```
-
 The [deploy folder](./deploy/) contains scripts and instructions to provision the application onto your favourite platform. 
 
-9. Go to the deploy/kubernetes folder
+8. Go to the deploy/kubernetes folder
 ```
 $ cd deploy/kubernetes
 ```
-10. Create namespace sock-shop
+9. Create namespace sock-shop
 ```
 $ kubectl create namespace sock-shop
 
 ```
-11. Deploy to Kubernetes Cluster
+10. Deploy to Kubernetes Cluster
 ```
 $ kubectl apply -f complete-demo.yaml
 ```
 
-12 Get the public IP address for a worker node in the cluster
+11 Get the public IP address for a worker node in the cluster
 ```
 $ ibmcloud ks workers <cluster_name>
 ```
-13 Access the microservices application
+12 Access the microservices application
 ```
 http://<Public IP>:30001/
 ```
